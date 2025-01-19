@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+ }
+ 
+ 
+ nav {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ 
+ nav .logo {
+    font-size: 1.5rem;
+ }
+ 
+ 
+ nav .nav-links {
+    list-style: none;
+    display: flex;
+ }
+ 
+ 
+ nav .nav-links li {
+    margin-left: 2rem;
+ }
+ 
+ 
+ nav .nav-links a {
+    color: white;
+    text-decoration: none;
+ }
+ 
+ 
+ #prescriptions {
+    padding: 2rem;
+ }
+ 
+ 
+ #prescription-list {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ 
+ .prescription-card {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+ }
+ 
+ 
+ .prescription-card h3 {
+    margin: 0 0 1rem 0;
+ }
+ 
+ 
+ .prescription-card p {
+    margin: 0;
+ }
+ 
+ 
+ .prescription-card span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+ }
+ 
+ 
+ /* Modal Styles */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+ }
+ 
+ 
+ .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+ }
+ 
+ 
+ .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+ }
+ 
+ 
+ .close-btn:hover,
+ .close-btn:focus {
+    color: black;
+    text-decoration: none;
+ }
+ 
+ 
+ /* Google Map Styles */
+ #map {
+    height: 400px;
+    width: 100%;
+    margin-top: 1rem;
+ }
+ 
+ 
+ button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ 
+ 
+ button:hover {
+    background-color: #555;
+ }
+ 
+ 
+ #delivery-status {
+    display: none;
+    color: green;
+    margin-top: 10px;
+ }
+ 
+ 
+ #pickup-message {
+    display: none;
+    color: blue;
+    margin-top: 10px;
+ }
+  
+ 
+ 

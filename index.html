@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prescription Digitalization</title>
+   <link rel="stylesheet" href="styles.css">
+   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+
+
+  
+
+
+   <!-- Navbar -->
+   <nav>
+       <div class="logo">Name of the Patient</div>
+       <ul class="nav-links">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#prescriptions">My Prescriptions</a></li>
+       </ul>
+   </nav>
+
+
+   <!-- Prescription List Section -->
+   <section id="prescriptions">
+       <h2>My Prescriptions</h2>
+       <div id="prescription-list">
+           <!-- Prescriptions will be listed here dynamically -->
+       </div>
+   </section>
+
+
+   <!-- Prescription Detail Modal -->
+   <div id="prescription-modal" class="modal">
+       <div class="modal-content">
+           <span class="close-btn" onclick="closeModal()">&times;</span>
+           <h2>Prescription Detail</h2>
+           <p id="prescription-detail">Loading...</p>
+           <p id="order-status" style="display:none;"></p>
+           <button onclick="choosePharmacy()">Choose Pharmacy</button>
+       </div>
+   </div>
+
+
+   <!--Pharmacy Selection -->
+   <section id="pharmacy-selection" style="display:none;">
+       <h2>Select a Pharmacy</h2>
+       <select id = "pharmacy-dropdown">
+           <option value="" disabled selected>Select a pharmacy</option>
+       <select>
+      
+       <div id="pharmacy-info" style="margin-top: 10px;">
+           <p> <strong>Selected Pharmacy:</strong></p>
+           <p id="pharmacy-name">Name: </p>
+           <p id="pharmacy-address">Address:</p>
+       </div>
+
+
+       <div>
+           <label for="service-options">Choose service:</label>
+           <select id="service-options"></select>
+       </div>
+      
+      
+       <button onclick="placeOrder()">Order Prescription</button>
+
+
+       <div id="delivery-status" style="display:none; color: green; margin-top: 10px;"></div>
+       <div id="pickup-message" style="display:none; color: blue; margin-top:10px;"></div>
+      
+   </section>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
